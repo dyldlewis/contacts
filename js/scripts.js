@@ -3,11 +3,18 @@ function Contact(first, last, address, email) {
   this.firstName = first;
   this.lastName = last;
   this.email = email;
-}
+  this.addresses = [];
+};
+
+function Address(street, city, state) {
+  this.street = street;
+  this.city = city;
+  this.state = state;
+};
 
 Contact.prototype.fullName = function() {
   return this.firstName + " " + this.lastName;
-}
+};
 
 // user interface logic
 $(document).ready(function() {
