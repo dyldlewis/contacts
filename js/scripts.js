@@ -17,7 +17,7 @@ Contact.prototype.fullName = function() {
 };
 
 Address.prototype.fullAddress = function() {
-  return this.street + ", " + this.city + this.state;
+  return this.street + ", " + this.city + ", "+ this.state;
 };
 
 // user interface logic
