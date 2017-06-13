@@ -2,7 +2,6 @@
 function Contact(first, last, address, email) {
   this.firstName = first;
   this.lastName = last;
-  this.address = address;
   this.email = email;
 }
 
@@ -17,7 +16,6 @@ $(document).ready(function() {
 
     var inputtedFirstName = $("input#new-first-name").val();
     var inputtedLastName = $("input#new-last-name").val();
-    var inputtedAddress = $("input#new-address").val();
     var inputtedEmail = $("input#new-email").val();
 
     var newContact = new Contact(inputtedFirstName, inputtedLastName, inputtedAddress, inputtedEmail);
@@ -33,7 +31,6 @@ $(document).ready(function() {
       $("#show-contact h2").text(newContact.firstName);
       $(".first-name").text(newContact.firstName);
       $(".last-name").text(newContact.lastName);
-      $(".address").text(newContact.address);
       $(".email").text(newContact.email);
     });
   });
